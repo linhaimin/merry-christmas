@@ -1,0 +1,1211 @@
+html,
+body {
+  margin: 0;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  border: 3px dashed #218359;
+}
+
+#main .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #9e0016;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-tree {
+  position: relative;
+}
+
+#main .left .tree {
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  width: 338px;
+  /* transform: translate(-50%, -50%); */
+}
+.box-btn {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left .btn {
+  background-color: #218359;
+  width: 100px;
+  height: 60px;
+  border-radius: 50% 20%/10% 40%;
+  /* position: absolute;
+  top: 150px;
+  left: 188px; */
+  animation: heart 0.8s linear infinite;
+}
+
+.left .link {
+  width: 100px;
+  height: 60px;
+  text-decoration: none;
+  border-radius: 50% 20%/10% 40%;
+}
+
+snow {
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: white;
+  font-size: 1em;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.ball {
+  position: absolute;
+  border-radius: 50%;
+  animation: blink 1s infinite alternate;
+}
+
+.ball-red {
+  background-color: #ff7e7e;
+}
+
+.ball-red-1 {
+  width: 20px;
+  height: 20px;
+  top: 137px;
+  left: 118px;
+}
+
+.ball-yellow {
+  background-color: yellow;
+}
+
+.ball-yellow-1 {
+  width: 20px;
+  height: 20px;
+  top: 60px;
+  left: 140px;
+}
+
+.ball-white {
+  background-color: white;
+}
+
+.ball-white-1 {
+  width: 20px;
+  height: 20px;
+  top: 237px;
+  left: 150px;
+}
+
+.ball-white-2 {
+  width: 15px;
+  height: 15px;
+  top: 94px;
+  left: 128px;
+}
+
+.ball-green {
+  background-color: #44d544;
+}
+.ball-green-1 {
+  width: 15px;
+  height: 15px;
+  top: 90px;
+  left: 200px;
+}
+
+.ball-blue {
+  background-color: blue;
+}
+.ball-blue-1 {
+  width: 20px;
+  height: 20px;
+  top: 60px;
+  left: 140px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.gift {
+  position: absolute;
+}
+
+.gift-1 {
+  top: 212px;
+  left: 201px;
+  animation: heart1 1.5s linear infinite;
+}
+
+.gift-2 {
+  top: 93px;
+  left: 163px;
+  transform: rotate(24deg);
+}
+
+.gift-5 {
+  top: 149px;
+  left: 79px;
+  transform: rotate(-16deg);
+}
+
+.gift-3 {
+  top: 182px;
+  left: 118px;
+  transform: rotate(-35deg);
+}
+
+.gift-4 {
+  top: 78px;
+  left: 115px;
+  transform: rotate(-32deg);
+}
+
+.box-header,
+.box-footer {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.box-img,
+img {
+  width: 100%;
+}
+
+.icon-1 {
+  position: absolute;
+  left: 66vw;
+  top: 83vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-2 {
+  position: absolute;
+  left: 49vw;
+  top: 51vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-3 {
+  position: absolute;
+  left: 52vw;
+  top: 73vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-4 {
+  position: absolute;
+  left: 7vw;
+  top: 98vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-5 {
+  position: absolute;
+  left: 41vw;
+  top: 16vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-6 {
+  position: absolute;
+  left: 66vw;
+  top: 63vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-7 {
+  position: absolute;
+  left: 46vw;
+  top: 74vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-8 {
+  position: absolute;
+  left: 44vw;
+  top: 11vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-9 {
+  position: absolute;
+  left: 6vw;
+  top: 69vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-10 {
+  position: absolute;
+  left: 89vw;
+  top: 88vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-11 {
+  position: absolute;
+  left: 86vw;
+  top: 60vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-12 {
+  position: absolute;
+  left: 59vw;
+  top: 47vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-13 {
+  position: absolute;
+  left: 21vw;
+  top: 76vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-14 {
+  position: absolute;
+  left: 50vw;
+  top: 56vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-15 {
+  position: absolute;
+  left: 54vw;
+  top: 82vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-16 {
+  position: absolute;
+  left: 69vw;
+  top: 98vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-17 {
+  position: absolute;
+  left: 57vw;
+  top: 25vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-18 {
+  position: absolute;
+  left: 35vw;
+  top: 65vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-19 {
+  position: absolute;
+  left: 6vw;
+  top: 14vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-20 {
+  position: absolute;
+  left: 27vw;
+  top: 52vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-21 {
+  position: absolute;
+  left: 7vw;
+  top: 34vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-22 {
+  position: absolute;
+  left: 65vw;
+  top: 74vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-23 {
+  position: absolute;
+  left: 49vw;
+  top: 53vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-24 {
+  position: absolute;
+  left: 8vw;
+  top: 83vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-25 {
+  position: absolute;
+  left: 18vw;
+  top: 15vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-26 {
+  position: absolute;
+  left: 74vw;
+  top: 91vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-27 {
+  position: absolute;
+  left: 71vw;
+  top: 7vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-28 {
+  position: absolute;
+  left: 57vw;
+  top: 31vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-29 {
+  position: absolute;
+  left: 92vw;
+  top: 16vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-30 {
+  position: absolute;
+  left: 24vw;
+  top: 48vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-31 {
+  position: absolute;
+  left: 70vw;
+  top: 64vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-32 {
+  position: absolute;
+  left: 92vw;
+  top: 7vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-33 {
+  position: absolute;
+  left: 83vw;
+  top: 23vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-34 {
+  position: absolute;
+  left: 98vw;
+  top: 80vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-35 {
+  position: absolute;
+  left: 17vw;
+  top: 68vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-36 {
+  position: absolute;
+  left: 6vw;
+  top: 80vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-37 {
+  position: absolute;
+  left: 86vw;
+  top: 6vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-38 {
+  position: absolute;
+  left: 85vw;
+  top: 80vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-39 {
+  position: absolute;
+  left: 51vw;
+  top: 2vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-40 {
+  position: absolute;
+  left: 93vw;
+  top: 46vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-41 {
+  position: absolute;
+  left: 51vw;
+  top: 77vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-42 {
+  position: absolute;
+  left: 24vw;
+  top: 2vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-43 {
+  position: absolute;
+  left: 60vw;
+  top: 51vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-44 {
+  position: absolute;
+  left: 41vw;
+  top: 23vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-45 {
+  position: absolute;
+  left: 12vw;
+  top: 48vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-46 {
+  position: absolute;
+  left: 67vw;
+  top: 47vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-47 {
+  position: absolute;
+  left: 84vw;
+  top: 83vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-48 {
+  position: absolute;
+  left: 62vw;
+  top: 19vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-49 {
+  position: absolute;
+  left: 62vw;
+  top: 43vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-50 {
+  position: absolute;
+  left: 56vw;
+  top: 43vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-51 {
+  position: absolute;
+  left: 50vw;
+  top: 3vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-52 {
+  position: absolute;
+  left: 52vw;
+  top: 88vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-53 {
+  position: absolute;
+  left: 87vw;
+  top: 18vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-54 {
+  position: absolute;
+  left: 84vw;
+  top: 41vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-55 {
+  position: absolute;
+  left: 82vw;
+  top: 1vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-56 {
+  position: absolute;
+  left: 70vw;
+  top: 63vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-57 {
+  position: absolute;
+  left: 88vw;
+  top: 88vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-58 {
+  position: absolute;
+  left: 23vw;
+  top: 23vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-59 {
+  position: absolute;
+  left: 61vw;
+  top: 91vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-60 {
+  position: absolute;
+  left: 61vw;
+  top: 21vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-61 {
+  position: absolute;
+  left: 67vw;
+  top: 31vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-62 {
+  position: absolute;
+  left: 26vw;
+  top: 44vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-63 {
+  position: absolute;
+  left: 85vw;
+  top: 79vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-64 {
+  position: absolute;
+  left: 56vw;
+  top: 53vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-65 {
+  position: absolute;
+  left: 9vw;
+  top: 14vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-66 {
+  position: absolute;
+  left: 42vw;
+  top: 29vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-67 {
+  position: absolute;
+  left: 43vw;
+  top: 20vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-68 {
+  position: absolute;
+  left: 28vw;
+  top: 81vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-69 {
+  position: absolute;
+  left: 66vw;
+  top: 98vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-70 {
+  position: absolute;
+  left: 95vw;
+  top: 50vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-71 {
+  position: absolute;
+  left: 44vw;
+  top: 34vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-72 {
+  position: absolute;
+  left: 84vw;
+  top: 29vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-73 {
+  position: absolute;
+  left: 12vw;
+  top: 57vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-74 {
+  position: absolute;
+  left: 1vw;
+  top: 80vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-75 {
+  position: absolute;
+  left: 2vw;
+  top: 19vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-76 {
+  position: absolute;
+  left: 29vw;
+  top: 35vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-77 {
+  position: absolute;
+  left: 13vw;
+  top: 7vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-78 {
+  position: absolute;
+  left: 93vw;
+  top: 10vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-79 {
+  position: absolute;
+  left: 26vw;
+  top: 86vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-80 {
+  position: absolute;
+  left: 44vw;
+  top: 65vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-81 {
+  position: absolute;
+  left: 21vw;
+  top: 78vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-82 {
+  position: absolute;
+  left: 12vw;
+  top: 59vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-83 {
+  position: absolute;
+  left: 92vw;
+  top: 7vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-84 {
+  position: absolute;
+  left: 68vw;
+  top: 11vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-85 {
+  position: absolute;
+  left: 21vw;
+  top: 88vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-86 {
+  position: absolute;
+  left: 39vw;
+  top: 46vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-87 {
+  position: absolute;
+  left: 42vw;
+  top: 60vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-88 {
+  position: absolute;
+  left: 25vw;
+  top: 96vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-89 {
+  position: absolute;
+  left: 1vw;
+  top: 64vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-90 {
+  position: absolute;
+  left: 68vw;
+  top: 16vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-91 {
+  position: absolute;
+  left: 10vw;
+  top: 5vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-92 {
+  position: absolute;
+  left: 82vw;
+  top: 43vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-93 {
+  position: absolute;
+  left: 91vw;
+  top: 39vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-94 {
+  position: absolute;
+  left: 18vw;
+  top: 42vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-95 {
+  position: absolute;
+  left: 52vw;
+  top: 90vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-96 {
+  position: absolute;
+  left: 30vw;
+  top: 5vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-97 {
+  position: absolute;
+  left: 65vw;
+  top: 96vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-98 {
+  position: absolute;
+  left: 71vw;
+  top: 9vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-99 {
+  position: absolute;
+  left: 40vw;
+  top: 73vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-100 {
+  position: absolute;
+  left: 66vw;
+  top: 81vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-101 {
+  position: absolute;
+  left: 1vw;
+  top: 61vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-102 {
+  position: absolute;
+  left: 73vw;
+  top: 11vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-103 {
+  position: absolute;
+  left: 9vw;
+  top: 36vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-104 {
+  position: absolute;
+  left: 26vw;
+  top: 5vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-105 {
+  position: absolute;
+  left: 63vw;
+  top: 28vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-106 {
+  position: absolute;
+  left: 42vw;
+  top: 72vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-107 {
+  position: absolute;
+  left: 25vw;
+  top: 45vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-108 {
+  position: absolute;
+  left: 85vw;
+  top: 55vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+.icon-109 {
+  position: absolute;
+  left: 48vw;
+  top: 84vh;
+  width: 2rem;
+  height: 2rem;
+  animation: heart1 0.6s linear infinite;
+}
+
+@keyframes heart1 {
+  0% {
+    transform: scale(1.08);
+  }
+  25% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+@keyframes heart2 {
+  0% {
+    transform: rotate(-45deg) scale(1.07);
+  }
+  80% {
+    transform: rotate(-45deg) scale(1);
+  }
+  100% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+} /*# sourceMappingURL=1.css.map */
