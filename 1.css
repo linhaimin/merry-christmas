@@ -9,7 +9,7 @@ body {
   margin: auto;
   background-color: white;
   position: relative;
-  border: 3px dashed #218359;
+  /* border: 3px dashed #218359; */
 }
 
 #main .left {
